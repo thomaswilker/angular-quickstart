@@ -1,7 +1,19 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    moduleId: module.id,
+    directives: [ROUTER_DIRECTIVES],
+    templateUrl: 'templates/main.html'
 })
-export class AppComponent { }
+export class AppComponent { 
+	
+	title = 'Tour of Heroes';
+  	
+	constructor() {
+		
+	}
+
+}
+

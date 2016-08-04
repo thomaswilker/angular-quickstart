@@ -1,0 +1,4 @@
+<input type="text" (keyup)="input$.next($event)" />
+<ul>
+    <li *ngFor="let r of resources$ | async" (click)="onSelect(r)"><a [routerLink]="['/resource/', r.id]">{{r.name}}</a></li>
+</ul>
